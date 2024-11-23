@@ -1,0 +1,10 @@
+﻿<Page x:Class="EmployeeManagement.EmployeeEditPage"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      Title="Edit Employee" Height="300" Width="400">
+    <Grid>
+        <TextBox Name="NameTextBox" Margin="10" Text="{Binding Name, UpdateSourceTrigger=PropertyChanged}" />
+        <TextBox Name="PositionTextBox" Margin="10,40,10,10" Text="{Binding Position, UpdateSourceTrigger=PropertyChanged}" />
+        <Button Name="SaveButton" Content="Save" Click="SaveButton_Click" Width="100" Height="30" HorizontalAlignment="Right" Margin="10"/>
+    </Grid>
+</Page>
